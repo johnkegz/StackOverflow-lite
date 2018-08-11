@@ -1,3 +1,40 @@
+
+a{
+	text-decoration: none;
+}
+.header{
+	position: fixed;	
+	left: 0px;
+	top: 0px;	
+	background-color: rgb(128,128,128, 0.7);
+	width: 100%;
+	height: 60px;
+	border-bottom: 2px solid silver;
+	
+}
+.right{
+	float: right;
+}
+.left{
+	color: rgb(133, 0, 0);
+	float: left;
+	padding: 15px 0px 0px 90px;
+}
+.right ul{
+	list-style: none;
+	margin: 17px 90px 0px 0px;
+	padding-left: 0px;
+}
+.right ul li{
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 5px 15px 5px;	
+}
+.right ul li a{
+	color: rgb(133, 0, 0);
+	text-decoration: none;
+}
+
 .login-background{
 	position: fixed;
 	top: 0px;
@@ -84,3 +121,32 @@
 }
 
 /**/
+/**/
+.question{
+	width: 73%;
+	background-color: white;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 4%;
+	position: absolute;
+	padding-right: 2%;
+	padding-left: 3%;
+}
+.qn .postee{
+
+
+}
+
+.postee ul{
+	list-style: none;
+	margin: 17px 90px 0px 0px;
+	padding-left: 0px;
+}
+.postee ul li{
+	display: inline;
+	
+}
+.postee ul li a{
+	color: rgb(133, 0, 0);
+	text-decoration: none;
+}
