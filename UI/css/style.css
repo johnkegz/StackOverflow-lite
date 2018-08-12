@@ -52,6 +52,15 @@ a{
 	background-color: rgba(0, 0, 0, 0.5);
 	
 }
+.main1{
+	position: fixed;
+	top: 5%;
+	left: 7%;	
+	width: 90%;
+	bottom: 5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	
+}
 
 .login-section{
 	margin: 5% 60%;
@@ -154,15 +163,29 @@ a{
 	margin-left:90px;
 	margin-right: 90px; 
 }
-.recent-qn
-{
-	width:10%;
-	float: left;
-	background-color: blue
+.flex-container {
+    display: flex; 
+    padding-bottom: 50px;
+    font-family: Helvetica;
+    
+  }
+  
+  .flex-container > div {
+    border: 2px solid grey;
+	width: 50%;
+	color: black;
+    
+    margin-left: 1%;
+    
+    
+       
+  }
+  .flex-container > div ul li{
+	
+    font-size: 15px; 
+	display: inline;
+			
 }
-.Questions-many-answers
-{
-	width:50%;
-	float:right;
-	padding-right: 20px;
+.flex-container > div p{    
+	margin-left: 10px;		
 }
