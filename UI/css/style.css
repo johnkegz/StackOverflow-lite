@@ -197,6 +197,10 @@ a{
 	margin-top: 100px;
 	background-color: 1px solid red;
 }
+.answer-comment li{
+   display: inline-block;
+   padding-right: 10%;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
