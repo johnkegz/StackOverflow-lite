@@ -25,21 +25,33 @@
             </div>
 	<div class="header">
 		<div class="left">
-			Stackoverflow-lite
+				<h2>Stackoverflow-lite</h2>
 		</div>
 
-		<div class="right">
+		<a href="#" onclick = "copyDiv();"><img src="img/2.png" class="menu" id="menu" width="40px" height="40px;" ></a>
+		<div class="right" id="nav">
 			<ul>
-				<li><a href="questions.html">Questions</a></li>
-				<li class="active"><a href="your.html">Your Questions</a></li>
-				<li><a href="login.html">Logout</a></li>
+				<li ><a href="profile.html" >home</li>
+				<li ><a href="questions_ans.html">View questions</a></li>
+				<li ><a href="post.html">Post questions</a></li>
+				<li ><a href="index.html">Logout</a></li>
 			</ul>
 		</div>
+		<div id="navv" style="display: none;">
+			<ul id="navv" style="background-color: grey;list-style: none;">
+				<li style="margin-top: 50px;"><a href="#" onclick = "copyDiv2();"><img src="img/3.png" class="menu" id="menu" width="40px" height="40px;" ></a></li>
+				<li style="margin-top: 50px;"><a href="profile.html" > <h2>home</h2></a></li>
+				<li ><a href="questions_ans.html"> <h2>View questions</h2></a></li>
+				<li ><a href="post.html"><h2>Post questions</h2></a></li>
+				<li ><a href="index.html"><h2>Logout</h2></a></li>
+			</ul>
+		</div>
+		<div id="menu-display"> </div>
 		
 		
 	</div>
 
-	
+	<script src="js/main.js"></script>	
 		
 </body>
 </html>

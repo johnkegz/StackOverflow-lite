@@ -17,6 +17,7 @@ a{
 	color: rgb(133, 0, 0);
 	float: left;
 	padding: 15px 0px 0px 90px;
+	font
 }
 .right ul{
 	list-style: none;
@@ -190,7 +191,12 @@ a{
 	width: 120%;
 	height: 80px;;
 }
-
+.menu{display:none;}
+#navv ul{
+	list-style: none;
+	margin-top: 100px;
+	background-color: 1px solid red;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
@@ -260,6 +266,19 @@ a{
 	.text-area{
 		width: 115%;
 		height: 70px;;
+	}
+	.nav ul li{
+		display: none;
+		margin-left: 15px;
+		padding: 5px 5px 15px 5px;	
+	}
+	.right{
+		display: none;
+	}
+	.menu{display:block;
+		float: right;
+		padding-right: 20px;
+		padding-top: 10px;
 	}
 }
 @media screen and (max-width: 698px){
