@@ -157,22 +157,22 @@ a{
 	margin-left:90px;
 	margin-right: 90px; 
 }
-.flex-container {
-    display: flex; 
-    padding-bottom: 50px;
-    font-family: Helvetica;
-    
-  }
-  
-  .flex-container > div {
+
+  .flex-container > .flec1{
     border: 2px solid grey;
-	width: 50%;
-	color: black;
-    
-    margin-left: 1%;
-    
-    
-       
+	width: 48%;
+	color: black;    
+	margin-left: 1%;
+	float: right;
+	top: -100px;
+  }
+  .flex-container > .flec{
+    border: 2px solid grey;
+	width: 48%;
+	color: black;    
+	margin-left: 1%;
+	float: right;
+	top: -100px;
   }
   .flex-container > div ul li{
 	
@@ -196,6 +196,11 @@ a{
 	.title{
 		font-size: 40px;		
 	}
+	.question{
+		width: 80%;		
+		margin-left: 6%;
+		margin-top: 6%;		
+	}
 }
 @media screen and (max-width: 920px){	
 	.title{
@@ -205,6 +210,11 @@ a{
 @media screen and (max-width: 920px){	
 	.title{
 		font-size: 30px;		
+	}
+	.account-section{
+		margin: 5% 14%;
+		width: 80%;
+		
 	}
 }
 
@@ -241,6 +251,11 @@ a{
 		margin-top: 0;
 
 	}
+	.question{
+		width: 89%;		
+		margin-left: 2%;
+		margin-top: 10%;			
+	}
 }
 @media screen and (max-width: 698px){
 	.login-section{
@@ -248,21 +263,60 @@ a{
 		width: 100%;	
 	}	
 }
-@media screen and (max-width: 698px){
+@media screen and (max-width: 648px){
 	.login-section{
 		margin: 40% 8%;
 		width: 100%;	
-	}	
+	}
+	.flex-container > .flec1{
+		border: 2px solid grey;
+		width: 100%;
+		color: black;    
+		margin-left: 1%;
+		float: right;
+		top: -100px;
+	  }
+	  .flex-container > .flec{
+		border: 2px solid grey;
+		width: 100%;
+		color: black;    
+		margin-left: 1%;
+		float: right;
+		top: -100px;
+		margin-top: 20px;
+	  }
+	
 }
 @media screen and (max-width: 490px){
 	.login-section{
 		margin: 54% 5%;
 		width: 100%;	
 	}	
+	.account-section{
+		margin: 5% 8%;
+		width: 90%;
+		
+	}
+
 }
 @media screen and (max-width: 370px){
 	.login-section{
-		margin: 70% 5%;
+		margin: 62% 5%;
 		width: 100%;	
 	}	
+	.main{
+		position: fixed;
+		top: 10%;
+		left: 5%;	
+		width: 90%;
+			
+	}
+	.main1{
+		position: fixed;
+		top: 8%;
+		left: 2%;	
+		right: 2%;
+		width: 98%;
+			
+	}
 }
