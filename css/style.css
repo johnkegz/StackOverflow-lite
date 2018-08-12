@@ -197,6 +197,15 @@ a{
 	margin-top: 100px;
 	background-color: 1px solid red;
 }
+.answer-comment li{
+   display: inline-block;
+   padding-right: 10%;
+}
+.fetch{
+	width: 100%;
+	text-align: center;
+	padding-left: 30%;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
