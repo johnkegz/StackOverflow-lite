@@ -201,6 +201,11 @@ a{
    display: inline-block;
    padding-right: 10%;
 }
+.fetch{
+	width: 100%;
+	text-align: center;
+	padding-left: 30%;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
