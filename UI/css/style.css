@@ -189,3 +189,10 @@ a{
 .flex-container > div p{    
 	margin-left: 10px;		
 }
+
+.number ul li{
+	
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 5px 15px 5px;
+}
