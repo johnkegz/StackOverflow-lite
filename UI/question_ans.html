@@ -7,12 +7,14 @@
 <body>
 	<img src="img/background.jpg" class="login-background">
 	<div class="question">
-				<div class="post" id="side2 ">Recently asked questions</div>
-				<div class="qn">					
+				<div class="post" id="side2 " ><h3>Recently asked questions</h3></div>
+				<div class="qn">
+										
 					<div class="postee">
+						
 								<p>
 								<ul>
-									<li>Name:</li>
+									<li id="postee-name">Name:</li>
 									<li>Alex</a></li>									
 								</ul>
 							    </p>
@@ -26,11 +28,12 @@
 						<hr/>
 					</div>	
 					<div class="anss">
-					<div class="qn">					
+					<div class="qn">
+							<h3>Answers</h3>					
 							<div class="postee">
 										<p>
 										<ul>
-											<li>Name:</li>
+											<li id="postee-name">Name:</li>
 											<li>Rose m</a></li>									
 										</ul>
 										</p>
@@ -55,7 +58,7 @@
 									<div class="postee">
 												<p>
 												<ul>
-													<li>Name:</li>
+													<li id="postee-name">Name:</li>
 													<li>Peter</a></li>									
 												</ul>
 												</p>
@@ -78,7 +81,7 @@
 											<div class="postee">
 														<p>
 														<ul>
-															<li>Name:</li>
+															<li id="postee-name">Name:</li>
 															<li>George</a></li>									
 														</ul>
 														</p>
@@ -101,7 +104,7 @@
 													<div class="postee">
 																<p>
 																<ul>
-																	<li>Name:</li>
+																	<li id="postee-name">Name:</li>
 																	<li>Kenneth</a></li>									
 																</ul>
 																</p>
@@ -126,25 +129,25 @@
             </div>
 	<div class="header">
 		<div class="left">
-				<h2>Stackoverflow-lite</h2>
+			<h2 class="logo-name">Stackoverflow-lite</h2>
 		</div>
 
 		<a href="#" onclick = "copyDiv();"><img src="img/2.png" class="menu" id="menu" width="40px" height="40px;" ></a>
 		<div class="right" id="nav">
 				<ul>
-						<li ><a href="profile.html" >home</li>
-						<li ><a href="questions_ans.html">View questions</a></li>
-						<li ><a href="post.html">Post questions</a></li>
-						<li ><a href="index.html">Logout</a></li>
+					<li class="nav-bar"><a href="profile.html" >Home</li>
+						<li class="nav-bar"><a href="questions_ans.html">View questions</a></li>
+						<li class="nav-bar"><a href="post.html">Post questions</a></li>
+						<li class="nav-bar"><a href="index.html">Logout</a></li>
 					</ul>
 				</div>
 				<div id="navv" style="display: none;">
-					<ul id="navv" style="background-color: grey;list-style: none;">
-						<li style="margin-top: 50px;"><a href="#" onclick = "copyDiv2();"><img src="img/3.png" class="menu" id="menu" width="40px" height="40px;" ></a></li>
-						<li style="margin-top: 50px;"><a href="profile.html" > <h2>home</h2></a></li>
-						<li ><a href="questions_ans.html"> <h2>View questions</h2></a></li>
-						<li ><a href="post.html"><h2>Post questions</h2></a></li>
-						<li ><a href="index.html"><h2>Logout</h2></a></li>
+					<ul id="navv" >
+						<li class="number-top home"><a href="#" onclick = "copyDiv2();"><img src="img/3.png" class="menu" id="menu" width="40px" height="40px;" ></a></li>
+						<li class="number-top"><a href="profile.html" > <h2>Home</h2></a></li>
+						<li ><a href="questions_ans.html" class="number-top"> <h2>View questions</h2></a></li>
+						<li ><a href="post.html" class="number-top"><h2>Post questions</h2></a></li>
+						<li ><a href="index.html" class="number-top"><h2>Logout</h2></a></li>
 					</ul>
 				</div>
 				<div id="menu-display"> </div>
