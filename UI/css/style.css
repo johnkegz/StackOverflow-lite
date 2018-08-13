@@ -322,6 +322,11 @@ a{
 		top: -100px;
 		margin-top: 20px;
 	  }
+	  .question{
+		width: 80%;		
+		margin-left: 6%;
+		margin-top:15%;		
+	}
 	
 }
 @media screen and (max-width: 490px){
