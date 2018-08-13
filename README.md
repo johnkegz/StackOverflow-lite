@@ -48,4 +48,4 @@ The system is deployed on github
 
 ## Acknowledgments
 
-* Thanks to Louis Musanje Micheal MY Learning Facilitator(LFA), ninjas-level-up group and Andela
+* Thanks to Andela
