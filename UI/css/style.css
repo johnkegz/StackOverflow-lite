@@ -206,6 +206,11 @@ a{
 	text-align: center;
 	padding-left: 30%;
 }
+.search-btn{
+	width: 10%;
+	background-color: grey;
+	color: blue;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
@@ -218,9 +223,14 @@ a{
 		margin-top: 6%;		
 	}
 }
-@media screen and (max-width: 920px){	
-	.title{
-		font-size: 35px;		
+@media screen and (max-width: 980px){	
+
+	.search-btn{
+		width: 9%;
+		font-size:10px;
+		padding-left:0px;
+		margin-left: 0px;
+		
 	}
 }
 @media screen and (max-width: 920px){	
@@ -231,6 +241,9 @@ a{
 		margin: 5% 14%;
 		width: 80%;
 		
+	}
+	.title{
+		font-size: 35px;		
 	}
 }
 
