@@ -4,6 +4,10 @@
 
 Stackoverflow-lite
 
+## gh-pages link
+https://johnkegz.github.io/StackOverflow-lite/
+
+
 ## Description
 Stackoverflow-lite app enables user to create an account, singin, view questions, post a question, view number of answers, view number of questions
 
