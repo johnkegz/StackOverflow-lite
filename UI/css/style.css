@@ -119,7 +119,7 @@ a{
 
 /**/
 .account-section{
-	margin: 5% 32%;
+	margin: 1% 32%;
 	width: 40%;
 	
 }
@@ -211,6 +211,10 @@ a{
 	background-color: grey;
 	color: blue;
 }
+.create-account-input{
+font-size: 20px;
+font-family: helvetica;
+}
 /*Media query*/
 @media screen and (max-width: 1112px){
 	
@@ -238,7 +242,7 @@ a{
 		font-size: 30px;		
 	}
 	.account-section{
-		margin: 5% 14%;
+		margin: 1% 16%;
 		width: 80%;
 		
 	}
@@ -348,7 +352,7 @@ a{
 		width: 100%;	
 	}	
 	.account-section{
-		margin: 5% 8%;
+		margin: 2% 10%;
 		width: 90%;
 		
 	}
