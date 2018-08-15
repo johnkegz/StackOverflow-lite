@@ -1,3 +1,3 @@
 [
-  "test_views.py::TestViews::test_fetch_all_questions"
+  "test_views.py::TestViews::test_get_a_questions"
 ]
