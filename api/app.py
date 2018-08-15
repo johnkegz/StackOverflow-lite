@@ -5,9 +5,9 @@ app.env = 'development'
 app.testing = True 
 GetUrls.fetch_urls(app)
 
-@app.route('/')
-def hello_world():
-    return 'This is kalyango John api -inprogress'
+# @app.route('/')
+# def hello_world():
+#     return 'This is kalyango John api -inprogress'
 
 if __name__ == '__main__':
     app.run(debug=True)

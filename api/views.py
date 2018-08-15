@@ -7,10 +7,8 @@ class GetQuestion(MethodView):
     question2 = Question(2, 'Sssali David', 2, 'who knows what an API is')  
     question3 = Question(3, 'Kajura Benson', 6, 'how can i implement Restful API')   
     questions = [question1, question2, question3]
-
+   
     def get(self, question_id):
         if question_id == None:
             return jsonify({'Questions':[question.__dict__ for question in self.questions]})
-            print(jsonify({'Questions':[question.__dict__ for question in self.questions]}))
-            
-    
+                       
