@@ -1,9 +1,9 @@
 from flask import Flask
-from urls import GetUrls
+from routes import GetRoutes
 app = Flask(__name__)
 app.env = 'development'
 app.testing = True 
-GetUrls.fetch_urls(app)
+GetRoutes.fetch_routes(app)
 
 # @app.route('/')
 # def hello_world():
