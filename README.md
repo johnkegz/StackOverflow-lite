@@ -1,3 +1,5 @@
+## Travis Badge
+[![Build Status](https://travis-ci.org/johnkegz/StackOverflow-lite.svg?branch=api)](https://travis-ci.org/johnkegz/StackOverflow-lite)
 ## Project Title
 
 Stackoverflow-lite
