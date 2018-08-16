@@ -9,11 +9,9 @@ class TestViews(unittest.TestCase):
         self.client = self.question.test_client
     def test_fetch_all_questions(self):
         result = self.client().get('api/v1/questions')
-        self.assertEqual(result.status, '200 OK')
         self.assertTrue(result.json["Questions"])
     def test_get_a_question(self):
-        result = self.client().get('api/v1/questions/1')
-        self.assertEqual(result.status, '200 OK')
+        result = self.client().get('api/v1/questions/1')        
         self.assertTrue(result.json["requested question"])
     def test_add_a_questions(self):
         result = self.client().post('api/v1/questions' , content_type="application/json", data=json.dumps(dict(id=4, user_name="ben", question_id=17, user_question="am in Gayaza where can i find andela")))
