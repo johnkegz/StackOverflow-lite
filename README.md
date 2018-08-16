@@ -1,8 +1,10 @@
-## Travis Badge
-[![Build Status](https://travis-ci.org/johnkegz/StackOverflow-lite.svg?branch=api)](https://travis-ci.org/johnkegz/StackOverflow-lite)
 ## Project Title
 
 Stackoverflow-lite
+## Travis Badge
+[![Build Status](https://travis-ci.org/johnkegz/StackOverflow-lite.svg?branch=api)](https://travis-ci.org/johnkegz/StackOverflow-lite)
+## Coveralls Badge
+[![Coverage Status](https://coveralls.io/repos/github/johnkegz/StackOverflow-lite/badge.svg)](https://coveralls.io/github/johnkegz/StackOverflow-lite)
 
 ## gh-pages link
 https://johnkegz.github.io/StackOverflow-lite/
