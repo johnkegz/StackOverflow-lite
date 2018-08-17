@@ -1,13 +1,11 @@
 from flask import Flask
 from routes import GetRoutes
-app = Flask(__name__)
-app.env = 'development'
-app.testing = True 
-GetRoutes.fetch_routes(app)
-
+App = Flask(__name__)
+App.env = 'development'
+App.testing = True 
+GetRoutes.fetch_routes(App)
 # @app.route('/')
 # def hello_world():
 #     return 'This is kalyango John api -inprogress'
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    App.run(debug=True)

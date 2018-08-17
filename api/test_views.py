@@ -2,11 +2,10 @@ import unittest
 import json
 from json import JSONEncoder
 
-from app import app
+from app import App
 class TestViews(unittest.TestCase):
-    def setUp(self):
-        self.question = app
-        self.client = self.question.test_client
+    def setUp(self):        
+        self.client = App.test_client
     def test_fetch_all_questions(self):
         result = self.client().get('api/v1/questions')
         self.assertTrue(result.json["Questions"])
