@@ -13,7 +13,7 @@ class TestViews(unittest.TestCase):
         result = self.client().get('api/v1/questions/1')        
         self.assertTrue(result.json["requested question"])
     def test_add_a_questions(self):
-        result = self.client().post('api/v1/questions' , content_type="application/json", data=json.dumps(dict(id=4, user_name="ben", question_id=17, user_question="am in Gayaza where can i find andela")))
+        result = self.client().post('api/v1/questions' , content_type="application/json", data=json.dumps(dict(user_question_id=17, user_name="ben", user_question="am in Gayaza where can i find andela")))
         self.assertTrue(result.json["New question file"])        
     def test_add_a_answer(self):
         result = self.client().post('/questions/2/answers' , content_type="application/json", data=json.dumps(dict(answer_id=4, answer="am in Gayaza where can i find andela")))
