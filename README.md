@@ -5,6 +5,8 @@ Stackoverflow-lite
 [![Build Status](https://travis-ci.org/johnkegz/StackOverflow-lite.svg?branch=api)](https://travis-ci.org/johnkegz/StackOverflow-lite)
 ## Coveralls Badge
 [![Coverage Status](https://coveralls.io/repos/github/johnkegz/StackOverflow-lite/badge.svg?branch=api)](https://coveralls.io/github/johnkegz/StackOverflow-lite?branch=api)
+## Code climate Maintainability Badge
+[![Maintainability](https://api.codeclimate.com/v1/badges/45d40c4afbecf21ca937/maintainability)](https://codeclimate.com/github/johnkegz/StackOverflow-lite/maintainability)
 
 ## gh-pages link
 https://johnkegz.github.io/StackOverflow-lite/
