@@ -22,22 +22,26 @@ class GetQuestionAnswer(MethodView):
         param: route /api/v1/questions and /api/v1/questions/<int:question_id>
         response: json data
         """
-        if question_id is None:
+        if str(request.url_rule) == "/api/v1/questions":
             return jsonify({'Questions':[question.__dict__ for question in self.questions]})
-        question_response = [question.__dict__ for question in self.questions
-                             if question.__dict__['user_question_id'] == question_id]
-        return jsonify({'requested question': question_response[0]})
+        if str(request.url_rule) == "/api/v1/questions/<int:question_id>":
+            question_response = [question.__dict__ for question in self.questions
+                                 if question.__dict__['user_question_id'] == question_id]
+            return jsonify({'requested question': question_response[0]})
+        return "Not found"
     def post(self, question_id=None):
         """
         post method for post requests
         param: route /api/v1/questions and /questions/<int:question_id>/answers
         response: json data
         """
-        if question_id is None:
+        if str(request.url_rule) == "/api/v1/questions":
             add_question = Question(request.json['user_question_id'], request.json['user_name'],
                                     request.json['user_question'])
             self.questions.append(add_question)
             return jsonify({'New question file': [x.__dict__ for x in self.questions]})
-        add_answer = Answer(request.json['answer_id'], question_id, request.json['answer'])
-        self.answers.append(add_answer)
-        return jsonify({'Answer to question': [x.__dict__ for x in self.answers]})
+        if str(request.url_rule) == "/questions/<int:question_id>/answers":
+            add_answer = Answer(request.json['answer_id'], question_id, request.json['answer'])
+            self.answers.append(add_answer)
+            return jsonify({'Answer to question': [x.__dict__ for x in self.answers]})
+        return jsonify({'Message': False})

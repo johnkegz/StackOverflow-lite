@@ -1,11 +1,9 @@
+"""Module for starting/ running the app"""
 from flask import Flask
 from routes import GetRoutes
-App = Flask(__name__)
-App.env = 'development'
-App.testing = True 
-GetRoutes.fetch_routes(App)
-# @app.route('/')
-# def hello_world():
-#     return 'This is kalyango John api -inprogress'
+APP = Flask(__name__)
+APP.env = 'development'
+APP.testing = True
+GetRoutes.fetch_routes(APP)
 if __name__ == '__main__':
-    App.run(debug=True)
+    APP.run(debug=True)
