@@ -269,6 +269,11 @@ font-size: 20px;
 	font-size: 15px;
 	font-family: helvetica;
 	  }
+	  #create-account-submit{
+		font-size: 20px;
+		font-family: helvetica;
+		width: 99%;
+	  }
 /*Media query*/
 @media screen and (max-width: 1112px){
 	

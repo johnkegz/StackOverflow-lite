@@ -1,0 +1,4 @@
+{
+  "test_views.py::TestViews::test_index": true,
+  "test_views.py::TestViews::test_post_requests": true
+}
