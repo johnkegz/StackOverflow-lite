@@ -1,6 +1,0 @@
-[
-  "api/test_views.py::TestViews::test_add_a_answer",
-  "api/test_views.py::TestViews::test_add_a_questions",
-  "api/test_views.py::TestViews::test_fetch_all_questions",
-  "api/test_views.py::TestViews::test_get_a_question"
-]
