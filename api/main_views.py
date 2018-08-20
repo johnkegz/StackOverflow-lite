@@ -45,3 +45,4 @@ class GetQuestionAnswer(MethodView):
             self.answers.append(add_answer)
             return jsonify({'Answer to question': [x.__dict__ for x in self.answers]})
         return jsonify({'Message': False})
+        

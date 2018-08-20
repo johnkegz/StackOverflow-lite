@@ -1,6 +1,0 @@
-.coverage
-.pytest_cache
-__pycache__/app.cpython-36.pyc
-__pycache__/test_views.cpython-36-PYTEST.pyc
-../venv/
-__pycache__
