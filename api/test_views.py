@@ -60,4 +60,4 @@ class TestViews(unittest.TestCase):
         self.assertTrue(result.json["Answer to question"])
         self.assertIn('Answer to question', respond)
         self.assertIsInstance(respond, dict)
-    
+            

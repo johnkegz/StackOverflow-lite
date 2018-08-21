@@ -8,12 +8,6 @@ class Question:
         self.user_question_id = user_question_id
         self.user_name = user_name
         self.user_question = user_question
-    # @property
-    # def questionss(self):
-    #     """
-    #     returns question id
-    #     """
-    #     return self.user_question_id
 class Answer:
     """
         Class defines the answer atributes
@@ -23,15 +17,3 @@ class Answer:
         self.answer_id = answer_id
         self.user_question_id = user_question_id
         self.answer = answer
-    # @property
-    # def answer_idd(self):
-    #     """
-    #     returns answer id
-    #     """
-    #     return self.answer_id
-    # @property
-    # def answerr(self):
-    #     """
-    #     returns answer id
-    #     """
-    #     return self.answer
