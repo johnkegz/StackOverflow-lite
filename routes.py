@@ -1,5 +1,5 @@
 """Class for defining url routes"""
-from main_views import GetQuestionAnswer
+from api.main_views import GetQuestion
 class GetRoutes():
     """
     GetRoutes defines routes
@@ -10,12 +10,12 @@ class GetRoutes():
         """
         Add url rule defines the routes for http requests
         """
-        question_view = GetQuestionAnswer.as_view('questions')
+        question_view = GetQuestion.as_view('questions')
         questionanswer.add_url_rule('/api/v1/questions', view_func=question_view,
                                     defaults={'question_id': None}, methods=['Get',])
         questionanswer.add_url_rule('/api/v1/questions/<int:question_id>',
                                     view_func=question_view, methods=['Get',])
-        question_answer = GetQuestionAnswer.as_view('questionsanswers')
+        question_answer = GetQuestion.as_view('questionsanswers')
         questionanswer.add_url_rule('/api/v1/questions',
                                     view_func=question_answer, methods=['POST',])
         questionanswer.add_url_rule('/questions/<int:question_id>/answers',
