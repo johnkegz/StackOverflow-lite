@@ -45,32 +45,32 @@ class TestViews(unittest.TestCase):
     def test_add_a_answer(self):
         """Method for tesing the post function which posts an answer"""
         result = self.client().post('/questions/17/answers',
-                                    content_type="application/json", data=json.dumps(dict(
-                                        answer_id=4, answer=
-                                        "am in Gayaza where can i find andela")))
+                                    content_type="application/json",
+                                    data=json.dumps(dict(answer_id=4, answer=
+                                                         "am in Gayaza where can i find andela")))
         result2 = self.client().post('/questions/p/answers',
                                      content_type="application/json",
                                      data=json.dumps(dict(
                                          answer_id=4, answer=
                                          "am in Gayaza where can i find andela")))
         result3 = self.client().post('/questions/17/answers',
-                                    content_type="application/json", data=json.dumps(dict(
-                                        answer=
-                                        "am in Gayaza where can i find andela")))
+                                     content_type="application/json",
+                                     data=json.dumps(dict(answer=
+                                                          "am in Gayaza where can i find andela")))
         result4 = self.client().post('api/v1/questions',
-                                    content_type="application/json",
-                                    data=json.dumps(dict(user_question_id=17, user_name="ben",
-                                                         user_question=
-                                                         "am in Gayaza where can i find andela")))
+                                     content_type="application/json",
+                                     data=json.dumps(dict(user_question_id=17, user_name="ben",
+                                                          user_question=
+                                                          "am in Gayaza where can i find andela")))
         result5 = self.client().post('/questions/17/answers',
-                                    content_type="application/json", data=json.dumps(dict(
-                                        answer_id=4, answer=
-                                        "am in Gayaza where can i find andela")))                               
+                                     content_type="application/json", data=json.dumps(dict(
+                                         answer_id=4, answer=
+                                         "am in Gayaza where can i find andela")))
         respond = json.loads(result5.data.decode("utf8"))
-        self.assertEqual(result.status_code, 404)        
+        self.assertEqual(result.status_code, 404)
         self.assertEqual(result2.status_code, 404)
         self.assertEqual(result3.status_code, 400)
-        self.assertEqual(result5.status_code, 201)        
+        self.assertEqual(result5.status_code, 201)
         self.assertIn('Question', str(respond))
         self.assertIn('Answer to question', str(respond))
         self.assertIsInstance(respond, list)

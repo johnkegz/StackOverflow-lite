@@ -8,9 +8,6 @@ class Question():
         self.user_question_id = user_question_id
         self.user_name = user_name
         self.user_question = user_question
-        
-    
-   
 class Answer():
     """
         Class defines the answer atributes
@@ -20,4 +17,4 @@ class Answer():
         self.answer_id = answer_id
         self.user_question_id = user_question_id
         self.answer = answer
-    
+        

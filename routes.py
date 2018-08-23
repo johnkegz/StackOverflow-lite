@@ -20,4 +20,4 @@ class GetRoutes():
                                     view_func=question_answer, methods=['POST',])
         questionanswer.add_url_rule('/questions/<int:question_id>/answers',
                                     view_func=question_answer, methods=['POST',])
-         
+                                             
