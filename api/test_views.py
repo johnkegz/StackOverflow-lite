@@ -16,14 +16,13 @@ class TestViews(unittest.TestCase):
         """Method for tesing the get function which returns all questions"""
         result = self.client().get('api/v1/questions')
         respond = json.loads(result.data.decode("utf8"))
-
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["Questions"])
         self.assertIn('Questions', respond)
         self.assertIsInstance(respond, dict)
     def test_get_a_question(self):
         """Method for tesing the get function which returns one question"""
-        result = self.client().get('api/v1/questions/1')
+        result = self.client().get('api/v1/questions/17')
         result2 = self.client().get('api/v1/questions/a')
         respond = json.loads(result.data.decode("utf8"))
         self.assertEqual(result.status_code, 200)
@@ -35,7 +34,7 @@ class TestViews(unittest.TestCase):
         """Method for tesing the post function which posts a question"""
         result = self.client().post('api/v1/questions',
                                     content_type="application/json",
-                                    data=json.dumps(dict(user_question_id=17, user_name="ben",
+                                    data=json.dumps(dict(user_question_id=18, user_name="ben",
                                                          user_question=
                                                          "am in Gayaza where can i find andela")))
         respond = json.loads(result.data.decode("utf8"))
@@ -45,7 +44,7 @@ class TestViews(unittest.TestCase):
         self.assertTrue(result.json["New question file"])
     def test_add_a_answer(self):
         """Method for tesing the post function which posts an answer"""
-        result = self.client().post('/questions/2/answers',
+        result = self.client().post('/questions/17/answers',
                                     content_type="application/json", data=json.dumps(dict(
                                         answer_id=4, answer=
                                         "am in Gayaza where can i find andela")))
@@ -54,10 +53,25 @@ class TestViews(unittest.TestCase):
                                      data=json.dumps(dict(
                                          answer_id=4, answer=
                                          "am in Gayaza where can i find andela")))
-        respond = json.loads(result.data.decode("utf8"))
-        self.assertEqual(result.status_code, 201)
+        result3 = self.client().post('/questions/17/answers',
+                                    content_type="application/json", data=json.dumps(dict(
+                                        answer=
+                                        "am in Gayaza where can i find andela")))
+        result4 = self.client().post('api/v1/questions',
+                                    content_type="application/json",
+                                    data=json.dumps(dict(user_question_id=17, user_name="ben",
+                                                         user_question=
+                                                         "am in Gayaza where can i find andela")))
+        result5 = self.client().post('/questions/17/answers',
+                                    content_type="application/json", data=json.dumps(dict(
+                                        answer_id=4, answer=
+                                        "am in Gayaza where can i find andela")))                               
+        respond = json.loads(result5.data.decode("utf8"))
+        self.assertEqual(result.status_code, 404)        
         self.assertEqual(result2.status_code, 404)
-        self.assertTrue(result.json["Answer to question"])
-        self.assertIn('Answer to question', respond)
-        self.assertIsInstance(respond, dict)
-            
+        self.assertEqual(result3.status_code, 400)
+        self.assertEqual(result5.status_code, 201)        
+        self.assertIn('Question', str(respond))
+        self.assertIn('Answer to question', str(respond))
+        self.assertIsInstance(respond, list)
+                  
