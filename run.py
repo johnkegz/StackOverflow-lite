@@ -1,4 +1,6 @@
-"""Module for starting/ running the app"""
+"""
+   Module for starting/ running the app
+"""
 from flask import Flask
 from routes import GetRoutes
 app = Flask(__name__)

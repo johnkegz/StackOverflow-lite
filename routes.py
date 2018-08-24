@@ -1,14 +1,16 @@
-"""Class for defining url routes"""
+"""
+   Class for defining url routes
+"""
 from api.main_views import GetQuestion
 class GetRoutes():
     """
-    GetRoutes defines routes
-    params:urls
+       GetRoutes defines routes
+       params:urls
     """
     @staticmethod
     def fetch_routes(questionanswer):
         """
-        Add url rule defines the routes for http requests
+           Add url rule defines the routes for http requests
         """
         question_view = GetQuestion.as_view('questions')
         questionanswer.add_url_rule('/api/v1/questions', view_func=question_view,
