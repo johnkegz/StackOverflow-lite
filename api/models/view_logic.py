@@ -2,7 +2,7 @@
    Module for processing logic for endpoints
 """
 
-from .question_answer_class import Question, Answer
+from models.question_answer_class import Question, Answer
 class QuestionAnswer:
     """
        Class for processing logic for endpoints

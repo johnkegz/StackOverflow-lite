@@ -3,7 +3,7 @@
 """
 from flask import jsonify, request
 from flask.views import MethodView
-from .view_logic import QuestionAnswer
+from models.view_logic import QuestionAnswer
 
 
 class GetQuestion(MethodView):

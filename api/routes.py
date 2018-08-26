@@ -1,7 +1,7 @@
 """
    Class for defining url routes
 """
-from api.main_views import GetQuestion
+from controllers.main_views import GetQuestion
 class GetRoutes():
     """
        GetRoutes defines routes
